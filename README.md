@@ -9,4 +9,4 @@ I add two another features to it
  -  It has colored
 
 for sea the colored mode go to colored/
-for sea the getValueFromUser mode go to scanf/
+for sea the getValueFromUser mode go to getValueFromUser/
