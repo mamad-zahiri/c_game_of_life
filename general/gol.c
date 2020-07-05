@@ -16,8 +16,8 @@ void draw(void *u, int w, int h)
         for (int x = 0; x < w; x ++)
             // printf(world[y][x] ? "#" : " ");
             // printf((world[y][x]) ? "1" : "0");
-            // printf(world[y][x] ? "@" : " ");
-            printf(world[y][x] ? "\e[47m " : "\e[40m ");
+            printf(world[y][x] ? "@" : " ");
+            // printf(world[y][x] ? "\e[47m " : "\e[40m ");
             // printf(world[y][x] ? "\u25A0" : "\u25A1");
         printf("\n");
     }

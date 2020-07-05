@@ -15,12 +15,13 @@ void draw(void *u, int w, int h)
         for (int x = 0; x < w; x++) {
 
             if (x == 0 || x == w-1 || y == 0 ||  y == w-1) {
-                printf(" *");
-                // printf("\e[40m *");
+                // printf(" *");
+                printf("\e[40m\e[31m #");
             } else {
-            // printf(world[y][x] ? "\e[46m  " : "\e[47m +");
-            printf(world[y][x] ? " +" : "  ");
-            // printf(world[y][x] ? " \u25A0" : " \u2574");
+            // printf(world[y][x] ? "\e[46m  " : "\e[47m  ");
+            // printf(world[y][x] ? "\e[44m  " : "\e[47m  ");
+            printf(world[y][x] ? "\e[47m +" : "\e[47m  ");
+	    // printf(world[y][x] ? " \u25A0" : " \u25A1");
 
             }
         }
@@ -60,7 +61,7 @@ void evolution(void *u, int w, int h)
 
 int main()
 {
-    int w = 40;
+    int w = 32;
     int h = w;
 
     char world[w][h];
@@ -69,12 +70,12 @@ int main()
 
     for (int x = 0; x < w; x++)
         for (int y = 0; y < h; y++)
-            world[y][x] = rand() < RAND_MAX / 3 ? 1 : 0;
+            world[y][x] = rand() < RAND_MAX / 6 ? 1 : 0;
 
     while (1) {
         draw(world, w, h);
         evolution(world, w, h);
-        usleep(200000);
+        usleep(100000);
     }
     
     return 0;
