@@ -7,3 +7,6 @@ https://www.youtube.com/watch?v=cjhFafydYCc
 I add two another features to it
  -  It can get the width from user
  -  It has colored
+
+for sea the colored mode go to colored/
+for sea the getValueFromUser mode go to scanf/
