@@ -1,9 +1,8 @@
 # Game of life
-A John Conway game of life rewrote by me
+A John Conway game of life
 
-It is just a Zero-player game and I make it from this video
-https://www.youtube.com/watch?v=cjhFafydYCc
+I made this repository to learn how to work with git, github and git commands.
 
-I just make some little changes for learning.
+It's just a Zero-player game and I make it from a video and adding color to it for learning.
 
-Adding color to it.
+video: https://www.youtube.com/watch?v=cjhFafydYCc
